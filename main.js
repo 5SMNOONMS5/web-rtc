@@ -4,13 +4,21 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCJXPicdGhRyOvBB119sIW1MQP21a3ZZv8",
-  authDomain: "webrtc-76147.firebaseapp.com",
-  projectId: "webrtc-76147",
-  storageBucket: "webrtc-76147.appspot.com",
-  messagingSenderId: "935686584424",
-  appId: "1:935686584424:web:9fc77fe8341d80dc0123dd"
+
+  apiKey: "AIzaSyBtvQ_rRSBmVAAKLicBSlhZQETklh7mLZQ",
+
+  authDomain: "webrtc2-ffc1e.firebaseapp.com",
+
+  projectId: "webrtc2-ffc1e",
+
+  storageBucket: "webrtc2-ffc1e.appspot.com",
+
+  messagingSenderId: "860538186023",
+
+  appId: "1:860538186023:web:6de3cb1990c30f75f7a102"
+
 };
+
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
