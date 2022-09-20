@@ -9,8 +9,9 @@ const firebaseConfig = {
   projectId: "webrtc-76147",
   storageBucket: "webrtc-76147.appspot.com",
   messagingSenderId: "935686584424",
-  appId: "1:935686584424:web:2d67f3ecad680be50123dd"
+  appId: "1:935686584424:web:9fc77fe8341d80dc0123dd"
 };
+
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
@@ -42,10 +43,7 @@ const hangupButton = document.getElementById('hangupButton');
 // 1. Setup media sources
 
 webcamButton.onclick = async () => {
-  localStream = await navigator.mediaDevices.getUserMedia({
-    video: true,
-    audio: true
-  });
+  localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
   remoteStream = new MediaStream();
 
   // Push tracks from local stream to peer connection
@@ -151,6 +149,3 @@ answerButton.onclick = async () => {
     });
   });
 };
-
-
-
